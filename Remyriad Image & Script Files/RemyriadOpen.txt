@@ -1,0 +1,78 @@
+LINK= "1pjP6EWCam7p3uN8-93BZFu-Wly6h-cGfH__nzGIIDz8"
+;You need to paste in your own spreadsheet link here inbetween the quotation marks
+;the string inbetween the /d/ and /edit
+
+
+
+
+;settings
+UNIT = MM
+CARDSIZE = 59, 86
+TEXTLIMIT=,on
+DPI=500
+
+
+VISUAL=, 75, 105
+IMAGE="1-{(IMGFILE)}",[IMGFILE],{2191/480}%,{6491/700}%,{14539/160}%,{44323/700}%,0,P
+IMAGE="1-{(FRMFILE)}",[FRMFILE],0%,0%,100%,100%
+LAYER=50
+IMAGE="1-8","ATK DEF Bar.png",{400/75}%,{6800/105}%,76%,{900/105}%,0,P
+ENDLAYER
+;STATDISPLAY
+IMAGE="1-8","ATK DEF.png",0%,{7000/105}%,{6700/75}%,{500/105}%,0,P,100
+;LEVELDISPLAY
+FONT=Bitsumishi,15,TB,#FF0800
+TEXT="1-{(LV)}",[LV],{6100/75}%,{500/105}%,{1100/75}%,{800/105}%,CENTER,CENTER,0,100,0.75,,,90
+FONT=Bitsumishi,15,TB,#FFFFFF
+TEXT="1-{(LV)}",[LV],{6100/75}%,{500/105}%,{1100/75}%,{800/105}%,CENTER,CENTER,0,100,,,,90
+FONT=Bitsumishi,15,TB,#000000
+TEXT="1-{(BLV)}",[BLV],{6100/75}%,{500/105}%,{1100/75}%,{800/105}%,CENTER,CENTER,0,100,0.75,,,90
+FONT=Bitsumishi,15,TB,#FFFFFF
+TEXT="1-{(BLV)}",[BLV],{6100/75}%,{500/105}%,{1100/75}%,{800/105}%,CENTER,CENTER,0,100,,,,90
+;NAMETOT
+LAYER=100,0,0,0,temp
+FONT=MatrixRegularSmallCaps,16,T,#000000
+TEXT="1-{(LONGNAME)}",[LONGNAME],{400/75}%,{300/105}%,76%,{700/105}%,LEFT,CENTER
+ENDLAYER
+FONT=MatrixRegularSmallCaps,16,T,#000000
+TEXT="1-{(LONGNAME)}",[LONGNAME],{400/75}%,{300/105}%,76%,{700/105}%,LEFT,CENTER,0,100,,,,(44)/(tr-tl)*100
+FONT=MatrixRegularSmallCaps,16,T,#000000
+TEXT="1-{(NAME)}",[NAME],{400/75}%,{300/105}%,76%,{700/105}%,LEFT,CENTER
+LAYER=100,0,0,0,temp
+FONT=MatrixRegularSmallCaps,16,T,#FFFFFF
+TEXT="1-{(BLONGNAME)}",[BLONGNAME],{400/75}%,{300/105}%,76%,{700/105}%,LEFT,CENTER
+ENDLAYER
+FONT=MatrixRegularSmallCaps,16,T,#FFFFFF
+TEXT="1-{(BLONGNAME)}",[BLONGNAME],{400/75}%,{300/105}%,76%,{700/105}%,LEFT,CENTER,0,100,,,,(44)/(tr-tl)*100
+FONT=MatrixRegularSmallCaps,16,T,#FFFFFF
+TEXT="1-{(BNAME)}",[BNAME],{400/75}%,{300/105}%,76%,{700/105}%,LEFT,CENTER
+;ATK/DEF
+FONT=EurostileCandyW01-Bold,8,TB,#000000
+TEXT="1-{(ATK)}",[ATK],{1600/75}%,{7000/105}%,{1400/75}%,{500/105}%,RIGHT,CENTER,0,100,0.15,,,90
+FONT=EurostileCandyW01-Bold,8,TB,#FFFFFF
+TEXT="1-{(ATK)}",[ATK],{1600/75}%,{7000/105}%,{1400/75}%,{500/105}%,RIGHT,CENTER,0,100,,,,90
+FONT=EurostileCandyW01-Bold,8,TB,#000000
+TEXT="1-{(DEF)}",[DEF],{4100/75}%,{7000/105}%,{1400/75}%,{500/105}%,RIGHT,CENTER,0,100,0.15,,,90
+FONT=EurostileCandyW01-Bold,8,TB,#FFFFFF
+TEXT="1-{(DEF)}",[DEF],{4100/75}%,{7000/105}%,{1400/75}%,{500/105}%,RIGHT,CENTER,0,100,,,,90
+;EFFECTBOX
+HTMLFONT=EffectBasic,Palatino Linotype,5.5,XD,#000000,LEFT,0,0,0,,,0,0
+HTMLFONT=EStretch,Palatino Linotype,6,XD,#000000,LEFT,0,0,0,,,0,0
+HTMLFONT=ESquish,Palatino Linotype,4,XD,#000000,LEFT,0,0,0,,,0,0
+HTMLFONT=ESmall,Palatino Linotype,4.8,XD,#000000,LEFT,0,0,0,,,0,0
+HTMLTEXT="1-{(EFFECT)}",[EFFECT],{3307/480}%,{7271/100}%,{20713/240}%,{3659/175}%,#FFFFFF,0,4FGTS,100,EffectBasic,EffectBasic
+;CREDITS
+FONT=MatrixRegularSmallCaps,8,T,#FFFFFF
+TEXT="1-{(DESIGNER)}",[DESIGNER],{529/96}%,{32829/350}%,{17819/480}%,{496/175}%,LEFT,CENTER
+TEXT="1-{(SOURCE)}",[SOURCE],{13829/240}%,{2623/28}%,{17819/480}%,{496/175}%,RIGHT,CENTER
+;NEWTYPES
+HTMLFONT=TBasic,MatrixRegularSmallCaps,8.2,BD,#000000,LEFT,0,0,0,,,0,0
+HTMLFONT=TWhite,MatrixRegularSmallCaps,8.2,BD,#FFFFFD,LEFT,0,0,0,,,0,0
+HTMLTEXT="1-{(TYPES)}",[TYPES],{1061/160}%,{3479/50}%,{18253/240}%,{4341/350}%,#FFFFFF,0,FGST4,100,TBasic,TBasic
+ENDVISUAL
+
+
+
+
+;rename this to anything, or don't. I recommend keeping the ! so that it displays above other files.
+DISPLAY="!RemyriadSamples.png"
